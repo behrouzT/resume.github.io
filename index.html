@@ -215,6 +215,30 @@
             margin-top: 5px;
         }
 
+        .navigation {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .navigation a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .navigation a:hover {
+            color: #2980b9;
+        }
+
+        .navigation a.active {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
         @media (max-width: 1200px) {
             .container {
                 padding: 40px 50px;
@@ -252,6 +276,11 @@
             .skills-grid {
                 grid-template-columns: 1fr;
             }
+
+            .navigation a {
+                display: block;
+                margin: 8px 0;
+            }
         }
 
         @media (max-width: 480px) {
@@ -272,6 +301,11 @@
 </head>
 <body>
     <div class="container">
+        <nav class="navigation">
+            <a href="index.html" class="active">Resume</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+
         <header>
             <img src="image.png" alt="Behrouz Torabi" class="profile-image">
             <h1>Behrouz Torabi</h1>
